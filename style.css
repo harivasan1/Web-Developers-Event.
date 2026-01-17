@@ -1,0 +1,118 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  padding: 24px;
+}
+
+/* Card */
+.card {
+  max-width: 460px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.09);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+}
+
+/* Headings */
+.card h1 {
+  text-align: center;
+  margin-bottom: 6px;
+  font-size: 1.9rem;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 26px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.82rem;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+}
+
+/* Inputs & Select */
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #111;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+/* Focus State (important UX improvement) */
+input:focus,
+select:focus {
+  border-color: #00c6ff;
+  box-shadow: 0 0 0 3px rgba(0, 198, 255, 0.25);
+}
+
+/* Button */
+button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 114, 255, 0.45);
+}
+
+/* Footer */
+.footer-text {
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.65;
+  margin-top: 22px;
+}
+
